@@ -1,3 +1,4 @@
+#Check notes Below
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
@@ -57,15 +58,19 @@ def check_if_intercepted(intercept, missile, threshold=0.1):
     print("Distance to Hit Missile: ", distance)
     return distance <= threshold
 
-# Size in km
+#Note: Space dimensions in km
 missile = [0.0, 4000.0, 8000.0]
 intercept = [6000.0, 10000.0, 0.0]
 target_hit = [8000.0, 6000.0, 0.0]
-#speed in m/s
+
+#Note: Speed in m/s
 missile_speed = 800
 intercept_speed = 650
 time_per_move = 0.2
 intercepted = False
+
+#Note: The Dimensions Could be Changed to Be Bigger or Smaller Before Running the Program. Nothing is Static.
+#Note: The Speeds Could be Changed to Be Faster or Slower Before Running the Program. Nothing is Static.
 
 missile_positions = []
 interceptor_positions = []
