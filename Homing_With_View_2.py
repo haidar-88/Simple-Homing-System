@@ -115,30 +115,3 @@ while not intercepted:
         print("\nInterception Failed.")
         break
     time.sleep(time_per_move)
-
-
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-
-missile_positions = np.array(missile_positions)
-interceptor_positions = np.array(interceptor_positions)
-
-ax.plot(missile_positions[:, 0], missile_positions[:, 1], missile_positions[:, 2], label='Missile Path', color='r', marker='.')
-ax.plot(interceptor_positions[:, 0], interceptor_positions[:, 1], interceptor_positions[:, 2], label='Interceptor Path', color='b', marker='.')
-
-ax.scatter(target_hit[0], target_hit[1], target_hit[2], label='Target Position', color='g', s=100)
-
-ax.set_xlim(0, 10000)
-ax.set_ylim(0, 10000)
-ax.set_zlim(0, 10000)
-
-
-ax.set_xlabel('X axis')
-ax.set_ylabel('Y axis')
-ax.set_zlabel('Z axis')
-
-ax.legend()
-
-plt.show()
-
-
