@@ -1,5 +1,4 @@
-This Python code simulates the interception of a missile in a 3D space, allowing both the space dimensions (in kilometers) 
-and the speeds of the missile and interceptor (in meters per second) to be dynamically adjusted before running the program.
+This Python code simulates the interception of a missile in a 3D space, allowing both the space dimensions (in kilometers) and the speeds of the missile and interceptor (in meters per second) to be dynamically adjusted before running the program. The path of both missiles is shown, as well as the target location, distance from missile to target, interceptor to missile, their live coordinates, and the elapsed time from beginning till end of the simulation.
 
 Code Breakdown and Logic:
 1)Imports and Setup:
@@ -41,8 +40,17 @@ The missile, interceptor, and target are visualized in a 3D space using matplotl
 - Red Path: The missile’s trajectory as it moves toward the target.
 - Blue Path: The interceptor’s trajectory as it moves to intercept the missile.
 - Green Marker: The target’s fixed position.
+
 The 3D plot's axes are labeled X, Y, and Z, all representing distances in kilometers. The missile’s and interceptor’s paths are shown over time
 and each iteration of the loop generates a new plot showing their current positions.
+
+
+Console Output:
+In addition to the visualization, key information is printed to the console at each time step:
+- The coordinates of the missile, interceptor, and target are shown.
+- The current time is printed, helping track the real-time simulation progress.
+- The distance from the missile to the target and the distance from the interceptor to the missile are calculated and displayed.
+- This helps give a real-time understanding of the dynamics of the interception.
 
 Final Visualization:
 At the end of the simulation, whether successful or failed, a final 3D plot is displayed showing the entire paths taken by both the missile and the interceptor
