@@ -1,6 +1,7 @@
 This Python code simulates the interception of a missile in a 3D space, allowing both the space dimensions (in kilometers) and the speeds of the missile and interceptor (in meters per second) to be dynamically adjusted before running the program. The path of both missiles is shown, as well as the target location, distance from missile to target, interceptor to missile, their live coordinates, and the elapsed time from beginning till end of the simulation.
 
 Code Breakdown and Logic:
+
 1)Imports and Setup:
 - The necessary libraries are imported, including matplotlib for 3D plotting, numpy for efficient numerical operations, and datetime and time to handle time-based functions.
 - The simulation is set up to run in a 3D space with default units in kilometers (km), and time is updated at regular intervals.
